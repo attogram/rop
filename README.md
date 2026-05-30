@@ -7,11 +7,13 @@ The higher your ROP score, the leaner your architecture, and the further your co
 
 - [ROP.md](ROP.md) - Restart Often Protocol overview
 
-# Opinionated High ROP Workflow (HROP)
+# High ROP Workflow (HROP)
+Our implementation of an Opinionated High ROP Workflow.
+
 - [HROP.md](HROP.md) - High ROP overview
 - [AGENTS.md](AGENTS.md) - Agents Protocol
 - [skills/](skills) - Agent skills for HROP
-- [active-tasks/](active-tasks) - Active tasks and packets for this repo <https://github.com/attogram/rop>
+- [active-tasks/](active-tasks) - Active tasks and packets
 
 ## Welcome to HROP Task
 - [active-tasks/welcome-to-rop/STATUS.md](active-tasks/welcome-to-rop/STATUS.md)

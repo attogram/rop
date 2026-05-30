@@ -103,7 +103,6 @@ For each packet in the Master Plan, the Orchestrator must:
   - `packets/001.discovery-and-design.md`, `002.implementation.md`, and
     `003.testing-and-verification.md`: Demonstrating the Packet lifecycle.
 
-### Available Agent Tools
+### Available Agent Skills
 - includeFile('skills/task-status-update/SKILL.md') # How to write a status update for a task
 - includeFile('skills/prefs-markdown/SKILL.md') # Markdown style
-- includeFile('skills/skill-creator/SKILL.md') # Skill creation and improvement

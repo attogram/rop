@@ -5,7 +5,7 @@ description: >
     Generates a well-formatted report, ready for copy-pasting.
 ---
 
-# Skill: Task Status Update v3.8
+# Skill: Task Status Update v3.9
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
@@ -34,7 +34,7 @@ to ensure easy copy-pasteability.
 Generate your report using this exact structural template:
 
 ```
-# {ICON} - {Ticket ID} - {exact name of task directory} - {YYYY-MM-DD HH:MM UTC}
+# {ICON} {Ticket ID} - {exact name of task directory} - {YYYY-MM-DD HH:MM UTC}
 
 ## Goal
 - {Single-sentence summary of the overall task objective}
@@ -56,7 +56,8 @@ Generate your report using this exact structural template:
 - {Ticket ID}: Use "###" if unknown.
 - {exact name of task directory}: The folder name in `active-tasks/`.
 - {Agent Name}: Your name (e.g., Jules).
-- {Username}: The User's name; use "Unknown" if unknown.
+- {Username}: The User's name; if unknown, omit the " with {Username}" part
+  of the footer.
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

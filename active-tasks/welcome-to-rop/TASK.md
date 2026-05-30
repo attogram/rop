@@ -31,6 +31,7 @@ Workflow, while adopting the workflow itself for project management.
 - 005 - hn-publicity-post - Pending - Draft a high-signal Show HN post.
 - 006 - define-usps - Complete - Identify USPs for Developers and Management.
 - 007 - placeholder-packet - Pending - {placeholder}
+- 008 - update-status-skill - Complete - Update the status reporting skill.
 
 ## Log
 
@@ -46,3 +47,4 @@ Workflow, while adopting the workflow itself for project management.
 - 2026-05-30: Orchestrator initialized Packet 006: define-usps.
 - 2026-05-30: Packet 006 executed by Jules (Executor role). USPs defined for
   Management and Developers.
+- 2026-05-30: Packet 008 executed. Updated task-status-update skill to v3.8.

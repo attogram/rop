@@ -1,10 +1,8 @@
 # High ROP Workflow
-Rooted in the "Commit early, commit often" philosophy, the High ROP (HROP)
-workflow is the specific implementation of the Restart Often Protocol
-witnessed in this repository.
+The High ROP (HROP) workflow is the specific implementation of the Restart Often Protocol ([ROP](ROP.md)) used in this repository.
 
 ## The Role of AGENTS.md
-The AGENTS.md file is the primary contract for all agent behavior in this repo.
+The [AGENTS.md](AGENTS.md) file is the primary contract for all agent behavior in this repo.
 It defines the state management, roles, and the available skill registry.
 Adherence to AGENTS.md is mandatory for both Orchestrator and Executor roles to
 ensure consistent handoffs and high ROP efficiency.

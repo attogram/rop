@@ -28,8 +28,8 @@ The Orchestrator is fully responsible for creating and maintaining the
 task directory structure to ensure persistent memory and crash recovery.
 ```text
 active-tasks/{taskName}/
-├── TASK.md          # Internal Ledger: Goal, Definition of Done, Master Plan, Packet List, and Log.
-├── STATUS.md        # Macro Dashboard: Product of requireFile('skills/task-status-update/SKILL.md')
+├── TASK.md          # Internal Ledger: Goal, DoD, Master Plan, and Log.
+├── STATUS.md        # Macro Dashboard: Product of task-status-update skill.
 └── packets/         # Subdirectory containing individual packet files.
     ├── 001.{packetName}.md # Zero-padded, sequential units of work.
     └── 002.{packetName}.md
@@ -53,12 +53,12 @@ active-tasks/{taskName}/
 ### Phase 1: Initialization & Discovery
 1. Discover Intent: Await user input. If no objective is provided, offer to
    assist in discovery, list available skills, or provide a system overview.
-2. Identify State: Cross-reference the intent against [`active-tasks`](../active-tasks). If a
-   matching task exists, recover its state; otherwise, proceed as a new task.
-3. Baseline Objectives: For new tasks, requireFile('skills/discover-goal/SKILL.md') to
-   collaborate with the User and establish the macro Goal and Definition of Done.
-4. Establish Environment: Provision the task directory structure and initialize
-   `TASK.md` with the validated Goal, Definition of Done, and initial Master Plan.
+2. Identify State: Cross-reference intent against [`active-tasks`](../active-tasks).
+   If a matching task exists, recover its state; otherwise, proceed as new.
+3. Baseline Objectives: For new tasks, require `discover-goal` skill to
+   collaborate with the User and establish Goal and Definition of Done.
+4. Establish Environment: Provision task directory and initialize `TASK.md`
+   with validated Goal, Definition of Done, and initial Master Plan.
 
 ### Phase 2: Packet Execution Loop
 For each packet in the Master Plan, the Orchestrator must:
@@ -69,18 +69,17 @@ For each packet in the Master Plan, the Orchestrator must:
     - Option 4: Other.
 2. Wait if Unassigned: If not assigned to the packet, the Agent MUST WAIT for
    the User to signal packet completion.
-3. Verify & Review: Confirm the packet report contains all items defined in the
-   Report Requirements, then evaluate the execution for success or failure.
-4. Gatekeeper Checkpoint: Present a summary of the packet results directly to
-   the User and prompt them with three options:
+3. Verify & Review: Confirm report contains all items defined in Requirements,
+   then evaluate the execution for success or failure.
+4. Gatekeeper Checkpoint: Present a summary of packet results to User and
+   prompt them with three options:
     - Approve: Permanently accept packet and move to next step in Master Plan.
-    - Modify: Update Goal, Definition of Done, Master Plan, or Packet, then create new packet.
+    - Modify: Update Goal, DoD, Master Plan, or Packet, then create new packet.
     - Other.
 
 ## 4. Roles and Responsibilities
-- Orchestrator Role: Maintains the task directory, tracks the Master Plan,
-  updates the Log (significant events and decisions), and guides the packet
-  lifecycle.
+- Orchestrator Role: Maintains task directory, tracks Master Plan, updates
+  Log (significant events/decisions), and guides the packet lifecycle.
 - Executor Role: Executes a specific, self-contained unit of work
   (Packet) autonomously.
 - User (Gatekeeper): The final authority on all decisions, defines the
@@ -91,16 +90,16 @@ For each packet in the Master Plan, the Orchestrator must:
 - Agent Roles: Alternate between Orchestrator Role (managing state, logs, and
   workflow) and Executor Role (executing an assigned micro-plan).
 - Reference Template: Use [`active-tasks/example-task`](../active-tasks/example-task)
-  as the blueprint for formatting markdown structures, logs, and status updates.
-  The example directory contains:
-  - `TASK.md`: Internal ledger - Goal, Definition of Done, Master Plan, Log.
-  - `STATUS.md`: Macro dashboard - Product of requireFile('skills/task-status-update/SKILL.md')
+  as the blueprint for formatting markdown structures, logs, and status
+  updates. The example directory contains:
+  - `TASK.md`: Internal ledger - Goal, DoD, Master Plan, Log.
+  - `STATUS.md`: Macro dashboard - Product of `task-status-update` skill.
   - `packets/001.discovery-and-design.md`, `002.implementation.md`, and
     `003.testing-and-verification.md`: Demonstrating the Packet lifecycle.
 
 ### Available Agent Skills
-- includeFile('skills/discover-goal/SKILL.md') # How to collaborate with User to establish Goal and Definition of Done
+- includeFile('skills/discover-goal/SKILL.md') # Collaborative goal setting
 - includeFile('skills/prefs-markdown/SKILL.md') # Markdown style
-- includeFile('skills/task-packet-create/SKILL.md') # How to create a new packet
-- includeFile('skills/task-packet-review/SKILL.md') # How to review a completed packet
-- includeFile('skills/task-status-update/SKILL.md') # How to write a status update for a task
+- includeFile('skills/task-packet-create/SKILL.md') # New packet initialization
+- includeFile('skills/task-packet-review/SKILL.md') # Completed packet review
+- includeFile('skills/task-status-update/SKILL.md') # Task status reporting

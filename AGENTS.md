@@ -1,4 +1,4 @@
-# Coding Agents Protocol v3.2.3
+# Agents Protocol v3.2.4
 
 Welcome to the `{repo}`. You MUST strictly adhere to this protocol.
 

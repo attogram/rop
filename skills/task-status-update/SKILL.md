@@ -25,6 +25,7 @@ to ensure easy copy-pasteability.
 - Timestamps: Use Central European Time.
 - Structural Layout: You MUST use a single `#` for the main headline and exactly
   `##` for content sections. No other header depths are allowed.
+- Style Preferences: Adhere to style guidelines in `skills/prefs-markdown/SKILL.md`.
 - Flat Lists: Start every list item at the absolute beginning of the line with `- `
   Do not add extra vertical line spaces or padding between list items.
 - Line Length: Hard-wrap lines to a maximum of 80 characters.

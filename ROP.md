@@ -1,11 +1,10 @@
 # Restart Often Protocol (ROP)
-ROP is a context-management discipline for multi-packet LLM workflows. Instead
-of feeding every prior token back into each new prompt, ROP quantifies how much
-context you drop between steps. This converts quadratic cost blow-up into
-predictable, linear spend. The higher your ROP score, the leaner your
-architecture, and the further your compute budget stretches.
+- ROP is a context-management discipline for multi-packet LLM workflows.
+- Instead of feeding every prior token back into each new prompt, ROP quantifies how much context you drop between steps.
+- This converts quadratic cost blow-up into predictable, linear spend.
+- The higher your ROP score, the leaner your architecture, and the further your compute budget stretches.
 
-See [HROP.md](HROP.md) for an Opinionated High ROP Workflow used in this repo.
+See [HROP.md](HROP.md) for the Opinionated High ROP Workflow used in this repo.
 
 ## What is ROP?
 Every time an LLM processes a new step in a multi-turn workflow, you face a

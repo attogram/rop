@@ -1,4 +1,9 @@
 # Restart Often Protocol (ROP)
+Rooted in the "Commit early, commit often" philosophy, the Restart Often Protocol (ROP)
+is a method of working with AI Agents that descreases costs and increases developer happiness.
+
+The higher your ROP score, the leaner your architecture, and the further your compute budget stretches.
+
 - ROP is a context-management discipline for multi-packet LLM workflows.
 - Instead of feeding every prior token back into each new prompt, ROP quantifies how much context you drop between steps.
 - This converts quadratic cost blow-up into predictable, linear spend.

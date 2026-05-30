@@ -28,6 +28,7 @@ Workflow, while adopting the workflow itself for project management.
 - 002 - Protocol Alignment - Complete - Standardizing directory structure.
 - 003 - Review What We Got - Complete - Consolidating docs and syncing skills.
 - 004 - better-ropness - Pending - Improve documentation and research.
+- 005 - hn-publicity-post - Pending - Draft a high-signal Show HN post.
 
 ## Log
 

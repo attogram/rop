@@ -5,14 +5,12 @@ description: >
     Generates a well-formatted report, ready for copy-pasting directly into Jira, Slack, or Email.
 ---
 
-# Skill: Task Status Update v3.3
-
+# Skill: Task Status Update v3.6
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
 
 ## Guiding Principles
-
 - Target Audience: Design the update for a busy Project Manager skimming
   Jira tickets to grasp the exact status of the task instantly.
 - Task-Level Context: The update must summarize progress on the entire task.
@@ -22,7 +20,10 @@ to ensure easy copy-pasteability.
 - Report, Don't Direct: Do not give commands to the user.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax like `[text](url)`.
   Raw URLs are allowed only if completely necessary and appropriate.
-- Timestamps: Use Central European Time.
+- Timestamps: Use UTC. You MUST verify the current date and time before reporting
+  by using available tools (e.g., `date` in bash) or checking the system prompt
+  for the current time. If the exact time is inaccessible,
+  use the last known timestamp or omit the time portion (YYYY-MM-DD only).
 - Structural Layout: You MUST use a single `#` for the main headline and exactly
   `##` for content sections. No other header depths are allowed.
 - Style Preferences: Adhere to style guidelines in `skills/prefs-markdown/SKILL.md`.
@@ -31,7 +32,6 @@ to ensure easy copy-pasteability.
 - Line Length: Hard-wrap lines to a maximum of 80 characters.
 
 ## Status Update Structure
-
 Generate your report using this exact structural template:
 
 ```

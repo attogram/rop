@@ -10,10 +10,10 @@ ensure consistent handoffs and high ROP efficiency.
 ## Implementation
 To maintain high ROP, the Agent and/or User must save state continuously to the
 repository within the `active-tasks/{taskName}/` directory:
-- TASK.md: The internal ledger containing Goal, Definition of Done, Master
+- `TASK.md`: The internal ledger containing Goal, Definition of Done, Master
   Plan, and Log.
-- STATUS.md: The macro dashboard for tracking overall progress.
-- packets/: A subdirectory containing zero-padded, sequential work units
+- `STATUS.md`: The macro dashboard for tracking overall progress.
+- `packets/`: A subdirectory containing zero-padded, sequential work units
   (e.g., `001.discovery.md`).
 
 ## Session Management

@@ -31,6 +31,7 @@ Workflow, while adopting the workflow itself for project management.
 - 005 - hn-publicity-post - Pending - Draft a high-signal Show HN post.
 - 007 - placeholder-packet - Pending - {placeholder}
 - 006 - define-usps - Pending - Identify USPs for Developers and Management.
+- 008 - update-status-skill - Complete - Update status skill format and footer.
 
 ## Log
 
@@ -44,3 +45,5 @@ Workflow, while adopting the workflow itself for project management.
 - 2026-05-30: Orchestrator initialized Packet 004: better-ropness.
   Transitioned to Phase 2.
 - 2026-05-30: Orchestrator initialized Packet 006: define-usps.
+- 2026-05-30: Orchestrator initialized Packet 008: update-status-skill.
+- 2026-05-30: Packet 008 executed by Jules. Updated status skill format.

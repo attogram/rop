@@ -5,7 +5,7 @@ description: >
     Generates a well-formatted report, ready for copy-pasting.
 ---
 
-# Skill: Task Status Update v3.7
+# Skill: Task Status Update v3.8
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
@@ -34,13 +34,10 @@ to ensure easy copy-pasteability.
 Generate your report using this exact structural template:
 
 ```
-# Status Report - {Ticket ID} - {Task Name} - {YYYY-MM-DD HH:MM UTC}
+# {ICON} - {Ticket ID} - {exact name of task directory} - {YYYY-MM-DD HH:MM UTC}
 
 ## Goal
 - {Single-sentence summary of the overall task objective}
-
-## Progress
-- {High-level summary of milestone accomplishments and impact}
 
 ## Packet Status
 - 🟢 001 - {Packet Name} - Complete - {Brief Description}
@@ -50,7 +47,16 @@ Generate your report using this exact structural template:
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
+
+(via {Agent Name} with {Username})
 ```
+
+## Placeholders
+- {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
+- {Ticket ID}: Use "###" if unknown.
+- {exact name of task directory}: The folder name in `active-tasks/`.
+- {Agent Name}: Your name (e.g., Jules).
+- {Username}: The User's name; use "Unknown" if unknown.
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

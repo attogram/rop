@@ -5,6 +5,8 @@ context you drop between steps. This converts quadratic cost blow-up into
 predictable, linear spend. The higher your ROP score, the leaner your
 architecture, and the further your compute budget stretches.
 
+See [HROP.md](HROP.md) for an oppinionated High ROP Workflow used in this repo.
+
 ## What is ROP?
 Every time an LLM processes a new step in a multi-turn workflow, you face a
 choice: carry forward all previous context, some of it, or none. Naive "append

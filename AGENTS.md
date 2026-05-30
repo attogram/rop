@@ -99,7 +99,7 @@ For each packet in the Master Plan, the Orchestrator must:
     `003.testing-and-verification.md`: Demonstrating the Packet lifecycle.
 
 ### Available Agent Skills
-- includeFile('skills/discover-goal/SKILL.md') # How to collaborate with User to establish Goal and DoD
+- includeFile('skills/discover-goal/SKILL.md') # How to collaborate with User to establish Goal and Definition of Done
 - includeFile('skills/prefs-markdown/SKILL.md') # Markdown style
 - includeFile('skills/task-packet-create/SKILL.md') # How to create a new packet
 - includeFile('skills/task-packet-review/SKILL.md') # How to review a completed packet

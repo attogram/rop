@@ -1,13 +1,11 @@
 # Restart Often Protocol
-Stop carrying the past. Start scaling the future.
-
 ROP is a context-management discipline for multi-packet LLM workflows. Instead
 of feeding every prior token back into each new prompt, ROP quantifies how much
 context you drop between steps. This converts quadratic cost blow-up into
 predictable, linear spend. The higher your ROP score, the leaner your
 architecture, and the further your compute budget stretches.
 
-## § 01 — What is ROP?
+## 01 — What is ROP?
 Every time an LLM processes a new step in a multi-turn workflow, you face a
 choice: carry forward all previous context, some of it, or none. Naive "append
 everything" approaches balloon your token count at a rate proportional to n^2.
@@ -22,7 +20,7 @@ The ROP insight: Engineering ROI in multi-packet workflows is almost never
 found in making individual packets faster. It is found in pushing the system
 rightward on the ROP spectrum as far as accuracy allows.
 
-## § 02 — The Math
+## 02 — The Math
 ### Cost Formula
 For a sequence of n packets each with base size s, and ROP factor r, total
 token volume T is:
@@ -101,7 +99,7 @@ Total Success Gains:
 | 50% ROP | 77.5% | +35% |
 | NO ROP | 57.5% | 0% |
 
-## § 04 — Architectural Mapping
+## 04 — Architectural Mapping
 Each point on the ROP spectrum corresponds to a distinct engineering pattern.
 Higher ROP demands more deliberate state design but pays back in efficiency
 and scalability.
@@ -115,7 +113,7 @@ and scalability.
 | 80% | Skeleton / State Vars | Minimal overhead, strict schema dependency |
 | 100% | Pure Stateless | Linear cost, requires fully decomposable tasks |
 
-## § 05 — Strategy
+## 05 — Strategy
 - T-01: The r-Factor is your primary lever. Speeding up individual packets
   gives marginal returns. Moving rightward on the ROP spectrum restructures
   your cost curve entirely.

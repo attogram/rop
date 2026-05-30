@@ -5,7 +5,7 @@ description: >
     Generates a well-formatted report, ready for copy-pasting.
 ---
 
-# Skill: Task Status Update v3.6
+# Skill: Task Status Update v3.7
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
@@ -22,8 +22,7 @@ to ensure easy copy-pasteability.
   Raw URLs are allowed only if completely necessary and appropriate.
 - Timestamps: Use UTC. You MUST verify the current date and time before
   reporting by using available tools (e.g., `date` in bash) or checking the
-  system prompt. If the exact time is inaccessible, use the last known
-  timestamp or omit the time portion (YYYY-MM-DD only).
+  system prompt. The format MUST be `{YYYY-MM-DD HH:MM UTC}`.
 - Structural Layout: You MUST use a single `#` for the main headline and
   exactly `##` for content sections. No other header depths are allowed.
 - Style Preferences: Adhere to guidelines in `skills/prefs-markdown/SKILL.md`.
@@ -35,7 +34,7 @@ to ensure easy copy-pasteability.
 Generate your report using this exact structural template:
 
 ```
-# Status Report - {Ticket ID} - {Task Name} - {YYYY-MM-DD HH:MM}
+# Status Report - {Ticket ID} - {Task Name} - {YYYY-MM-DD HH:MM UTC}
 
 ## Goal
 - {Single-sentence summary of the overall task objective}
@@ -44,12 +43,17 @@ Generate your report using this exact structural template:
 - {High-level summary of milestone accomplishments and impact}
 
 ## Packet Status
-- 001 - {Packet Name} - {Status} - {Brief Description of packet}
-- 002 - {Packet Name} - {Status} - {Brief Description of packet}
-- 003 - {Packet Name} - {Status} - {Brief Description of packet}
-- 004 - {Packet Name} - {Status} - {Brief Description of packet}
-- 005 - {Packet Name} - {Status} - {Brief Description of packet}
+- 🟢 001 - {Packet Name} - Complete - {Brief Description}
+- 🟠 002 - {Packet Name} - In Progress - {Brief Description}
+- 🟡 003 - {Packet Name} - Pending - {Brief Description}
+- 🔴 004 - {Packet Name} - Blocked - {Brief Description}
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 ```
+
+## Status Icons
+- 🔴 Blocked: The packet cannot proceed.
+- 🟡 Pending: The packet is waiting to be started.
+- 🟠 In Progress / Routed: The packet is currently being worked on.
+- 🟢 Task done: The packet has been completed successfully.

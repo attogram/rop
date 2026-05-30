@@ -22,10 +22,11 @@ Create a central resource for understanding ROP the metric and the High ROP Work
 
 ## Packet List
 
-- 001 - Discovery and Design - Complete - Initial setup and alignment with protocol.
-- 002 - Protocol Alignment - Complete - Standardizing directory structure and task ledger.
+- 001 - Goal Discovery - Complete - Initial setup and alignment.
+- 002 - Protocol Alignment - Complete - Standardizing directory structure.
+- 003 - Review What We Got - In Progress - Reviewing existing ROP docs.
 
 ## Log
 
-- 2025-05-14: Orchestrator aligned task with AGENTS.md protocol. Renamed tasks/ to active-tasks/.
-- 2025-05-14: Initialized TASK.md with Master Plan and Packet List.
+- 2025-05-14: Orchestrator aligned task with AGENTS.md protocol.
+- 2025-05-30: Initialized Packet 003: Review What We Got.

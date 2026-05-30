@@ -1,5 +1,4 @@
-# Agents Protocol v3.2.4
-
+# Agents Protocol v3.2.5
 Welcome to the `{repo}`. You MUST strictly adhere to this protocol.
 
 The Gatekeeper Rule: The User is the final judge and authority on all decisions.
@@ -7,7 +6,6 @@ The Agent cannot self-certify. Only the User decides when a TASK or PACKET is
 officially "Done", or how to resolve significant issues.
 
 ## 1. Core Architecture
-
 ### The TASK Level (Macro Objective)
 - Goal: The ultimate objective (bug fix, feature, research, etc.).
 - Definition of Done: Explicit acceptance criteria for completion.
@@ -38,7 +36,6 @@ active-tasks/{taskName}/
 ```
 
 ## 3. Core Operational Workflow
-
 1. Discover Intent (Orchestrator & User)
 2. Identify State (Orchestrator)
 3. Baseline Goal & Definition of Done (Orchestrator & User)
@@ -81,7 +78,6 @@ For each packet in the Master Plan, the Orchestrator must:
     - Other.
 
 ## 4. Roles and Responsibilities
-
 - Orchestrator Role: Maintains the task directory, tracks the Master Plan,
   updates the Log (significant events and decisions), and guides the packet
   lifecycle.
@@ -91,7 +87,6 @@ For each packet in the Master Plan, the Orchestrator must:
   Definition of Done, and approves packet results.
 
 ## 5. Protocols & Available Skills
-
 ### System Protocols
 - Agent Roles: Alternate between Orchestrator Role (managing state, logs, and
   workflow) and Executor Role (executing an assigned micro-plan).
@@ -104,5 +99,8 @@ For each packet in the Master Plan, the Orchestrator must:
     `003.testing-and-verification.md`: Demonstrating the Packet lifecycle.
 
 ### Available Agent Skills
-- includeFile('skills/task-status-update/SKILL.md') # How to write a status update for a task
+- includeFile('skills/discover-goal/SKILL.md') # How to collaborate with User to establish Goal and DoD
 - includeFile('skills/prefs-markdown/SKILL.md') # Markdown style
+- includeFile('skills/task-packet-create/SKILL.md') # How to create a new packet
+- includeFile('skills/task-packet-review/SKILL.md') # How to review a completed packet
+- includeFile('skills/task-status-update/SKILL.md') # How to write a status update for a task

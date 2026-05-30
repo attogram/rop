@@ -1,4 +1,4 @@
-# ROP - Restart Often Protocol
+# High ROP (Restart Often Protocol)
 Rooted in the "Commit early, commit often" philosophy, ROP is for working with Coding Agents.
 
 ## Basic ROP Workflow

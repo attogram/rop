@@ -21,7 +21,8 @@ to ensure easy copy-pasteability.
 - PII Compliance: Do not include real names, email addresses, or other
   personally identifiable information in reports.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax.
-  Raw URLs are allowed only if completely necessary and appropriate.
+  Raw URLs are allowed only if completely necessary and appropriate. Links
+  are only permitted in `README.md` and MUST NOT be used in `STATUS.md`.
 - Timestamps: Use UTC. You MUST verify the current date and time before
   reporting by using available tools (e.g., `date` in bash) or checking the
   system prompt. The format MUST be `{YYYY-MM-DD HH:MM UTC}`.
@@ -42,10 +43,10 @@ Generate your report using this exact structural template:
 - {Single-sentence summary of the overall task objective}
 
 ## Packet Status
-- 🟢 001 - {Packet Name} - Complete - {Brief Description}
-- 🟠 002 - {Packet Name} - In Progress - {Brief Description}
-- 🟡 003 - {Packet Name} - Pending - {Brief Description}
-- 🔴 004 - {Packet Name} - Blocked - {Brief Description}
+- 🟢 001 - **{name}** _(Complete)_ {Brief Description}
+- 🟠 002 - **{name}** _(In Progress)_ {Brief Description}
+- 🟡 003 - **{name}** _(Pending)_ {Brief Description}
+- 🔴 004 - **{name}** _(Blocked)_ {Brief Description}
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}

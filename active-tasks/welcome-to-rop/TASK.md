@@ -28,11 +28,9 @@ Workflow, while adopting the workflow itself for project management.
 - 002 - Protocol Alignment - Complete - Standardizing directory structure.
 - 003 - Review What We Got - Complete - Consolidating docs and syncing skills.
 - 004 - better-ropness - Pending - Improve documentation and research.
-- 005 - hn-publicity-post - Pending - Draft a high-signal Show HN post.
 - 006 - define-usps - Complete - Identify USPs for Developers and Management.
 - 007 - placeholder-packet - Pending - {placeholder}
 - 008 - update-status-skill - Complete - Update the status reporting skill.
-- 009 - create-style-hn-skill - Complete - Create a skill for Hacker News posts.
 
 ## Log
 
@@ -51,3 +49,4 @@ Workflow, while adopting the workflow itself for project management.
 - 2026-05-30: Packet 008 executed. Updated task-status-update skill to v3.8.
 - 2026-05-30: Orchestrator initialized Packet 009: create-style-hn-skill.
 - 2026-05-30: Packet 009 executed by Jules (Executor role).
+- 2026-05-31: Migrated HN-related packets (005, 009, 010) to style-hn task.

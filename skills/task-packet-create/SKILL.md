@@ -22,6 +22,8 @@ every file MUST include:
   - Background: Necessary history or architectural context.
   - Key Files: Absolute paths to every file the Executor must touch or read.
   - Resources: Specific URLs, docs, or environment variables.
+- Pre-requisites: List of required tools (bash, jq), access (read/write), and
+  capabilities (web search).
 - Plan: The exact, sequential steps (1, 2, 3) to complete the work.
 - Report Requirements: Precise list of artifacts or data the Executor must
   capture in their Report.

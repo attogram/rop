@@ -14,7 +14,11 @@ repository within the `active-tasks/{taskName}/` directory:
   Plan, and Log.
 - `STATUS.md`: The macro dashboard for tracking overall progress.
 - `packets/`: A subdirectory containing zero-padded, sequential work units
-  (e.g., `001.discovery.md`).
+  (e.g., `001.discovery.md`). Every packet must include a "Pre-requisites"
+  section listing required tools and access.
+- **Reporting**: Every packet report must identify the Executor.
+- **Status Updates**: The `STATUS.md` footer must list all agents (Orchestrators
+  and Executors) and users who have worked on the task, derived from history.
 
 ## Session Management
 - After every packet is completed and reviewed, the User should ideally restart

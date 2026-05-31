@@ -48,16 +48,16 @@ Generate your report using this exact structural template:
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-(via {Agent Name} with {Username})
+(via {Agents} and {Users})
 ```
 
 ## Placeholders
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
-- {Ticket ID}: Use "###" if unknown.
+- {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
-- {Agent Name}: Your name (e.g., Jules).
-- {Username}: The User's name; if unknown, omit the " with {Username}" part
-  of the footer.
+- {Agents}: Comma-separated list of all agents (Orchestrators and Executors)
+  who have worked on this task, found in TASK.md Log or packet reports.
+- {Users}: Comma-separated list of all Users who have contributed to the task.
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

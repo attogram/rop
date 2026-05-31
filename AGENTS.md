@@ -16,12 +16,15 @@ A completely self-contained, execution-agnostic unit of work. An entity (AI or
 human) with zero prior knowledge must be able to complete it solely by reading
 its file.
 
-Every packet file must contain four distinct sections:
+Every packet file must contain five distinct sections:
 1. Context: Relevant background, key file paths, environment/resource details,
    and skill dependencies.
-2. Plan: The exact, sequential steps to complete the packet work.
-3. Report Requirements: What validation artifacts or data must be collected.
-4. Report: The captured results and proof of execution appended upon completion.
+2. Pre-requisites: Required access (read/write), tools (bash, jq, curl), and
+   capabilities (web search, page load).
+3. Plan: The exact, sequential steps to complete the packet work.
+4. Report Requirements: What validation artifacts or data must be collected.
+5. Report: The captured results and proof of execution appended upon completion.
+   The Executor MUST include their `{Agent Name}` in this section.
 
 ## 2. Directory State & State Files
 The Orchestrator is fully responsible for creating and maintaining the
@@ -103,3 +106,10 @@ For each packet in the Master Plan, the Orchestrator must:
 - includeFile('skills/task-packet-create/SKILL.md') # New packet initialization
 - includeFile('skills/task-packet-review/SKILL.md') # Completed packet review
 - includeFile('skills/task-status-update/SKILL.md') # Task status reporting
+
+## 6. Glossary & Keywords
+- **dogfood**: This indicates that we are using the feature, protocol, or
+  standard within this repository itself to validate its utility and
+  refine its implementation (i.e., "eating our own dogfood").
+- **noop**: Tokens that have no meaning for the task or packet.
+- **TASKID**: The standard task ID format for this repository is `ROP-####`.

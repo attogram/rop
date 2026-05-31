@@ -6,11 +6,13 @@ bloat and execute the first cleanup.
 
 ## Goal
 
-Create a `done-tasks/` directory and move completed tasks there to maintain a
-lean `active-tasks/` directory while preserving history.
+Formalize the archiving protocol in `AGENTS.md`, create a `done-tasks/`
+directory, and move completed tasks there to maintain a lean `active-tasks/`
+directory while preserving history.
 
 ## Definition of Done
 
+- `AGENTS.md` updated with PM archiving responsibilities.
 - `done-tasks/` directory created at the root.
 - Completed tasks (ROP-004, ROP-005, ROP-007) moved from `active-tasks/` to
   `done-tasks/`.
@@ -31,4 +33,5 @@ lean `active-tasks/` directory while preserving history.
 ## Log
 
 - 2026-05-31: Task initialized to address active-tasks bloat.
+- 2026-05-31: Formalized archiving protocol in AGENTS.md.
 - 2026-05-31: Cleanup executed: ROP-004, ROP-005, ROP-007 moved to done-tasks/.

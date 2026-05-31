@@ -5,7 +5,7 @@ description: >
     Generates a well-formatted report, ready for copy-pasting.
 ---
 
-# Skill: Task Status Update v3.9
+# Skill: Task Status Update v4.0
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
@@ -19,8 +19,7 @@ to ensure easy copy-pasteability.
 - High Signal: Omit conversational filler, decorative spacers, and emojis.
 - Report, Don't Direct: Do not give commands to the user.
 - PII Compliance: Do not include real names, email addresses, or other
-  personally identifiable information in reports. Remove the User mention
-  entirely from footers.
+  personally identifiable information in reports.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax.
   Raw URLs are allowed only if completely necessary and appropriate.
 - Timestamps: Use UTC. You MUST verify the current date and time before
@@ -51,15 +50,17 @@ Generate your report using this exact structural template:
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-(via {Agents})
+({PM agents}, {Worker agents})
 ```
 
 ## Placeholders
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
 - {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
-- {Agents}: Comma-separated list of all agents (PMs and Workers)
-  who have worked on this task, found in TASK.md Log or packet reports.
+- {PM agents}: Comma-separated list of all PM agents who have worked on this
+  task, each prefixed with "PM ". The current PM MUST be listed first.
+- {Worker agents}: Comma-separated list of all Worker agents who have worked
+  on this task, each prefixed with "Worker ".
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

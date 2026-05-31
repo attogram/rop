@@ -98,7 +98,9 @@ For each packet in the Master Plan, the PM must:
   workflow) and the Worker Role (executing an assigned micro-plan).
 - Reference Template: Use [`active-tasks/example-task`](../active-tasks/example-task)
   as the blueprint for formatting markdown structures, logs, and status
-  updates. The example directory contains:
+  updates. Every `STATUS.md` must include a footer identifying all PM and
+  Worker agents in the format `({PM agents}, {Worker agents})`, with the
+  current PM listed first. The example directory contains:
   - `TASK.md`: Internal ledger - Goal, DoD, Master Plan, Log.
   - `STATUS.md`: Macro dashboard - Product of `task-status-update` skill.
   - `packets/001.discovery-and-design.md`, `002.implementation.md`, and

@@ -13,4 +13,4 @@ attogram.github.io.
 ## Next Steps
 - Execute Packet 001.
 
-(via Jules)
+(PM Jules, Worker Jules)

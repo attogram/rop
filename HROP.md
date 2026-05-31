@@ -18,7 +18,9 @@ repository within the `active-tasks/{taskName}/` directory:
   section listing required tools and access.
 - **Reporting**: Every packet report must identify the Worker.
 - **Status Updates**: The `STATUS.md` footer must list all agents (PMs
-  and Workers) and users who have worked on the task, derived from history.
+  and Workers) who have worked on the task, prefixed by their role. The
+  format MUST be `({PM agents}, {Worker agents})`, with the current PM
+  listed first. Agents never leave the list.
 
 ## Session Management
 - After every packet is completed and reviewed, the User should ideally restart

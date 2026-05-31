@@ -19,4 +19,4 @@ skill.
 ## Next Steps
 - Proceed with remaining documentation improvements in Packet 004.
 
-(via Jules)
+(PM Jules, Worker Jules)

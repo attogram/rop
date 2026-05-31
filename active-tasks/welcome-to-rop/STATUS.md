@@ -1,4 +1,4 @@
-# 🟠 ROP-001 - welcome-to-rop - 2026-05-30 23:45 UTC
+# 🟠 ROP-001 - welcome-to-rop - 2026-05-31 01:14 UTC
 
 ## Goal
 - Establish the initial documentation and workflow for the Restart Often
@@ -15,9 +15,11 @@ Management.
 - 🟡 007 - placeholder-packet - Pending - {placeholder}
 - 🟢 008 - update-status-skill - Task done - Update the status reporting
 skill.
+- 🟢 009 - create-style-hn-skill - Task done - Create a skill for Hacker
+News posts.
 
 ## Next Steps
-- Review the USPs and proceed with remaining documentation improvements in
-Packet 004.
+- Review the newly created HN skill.
+- Proceed with remaining documentation improvements in Packet 004.
 
 (via Jules)

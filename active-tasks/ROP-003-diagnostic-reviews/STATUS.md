@@ -2,7 +2,7 @@
 
 ## Goal
 - Create a comprehensive `reviews.md` document containing critical and
-constructive reviews of ROP/HROP.
+  constructive reviews of ROP/HROP.
 
 ## Packet Status
 - 🟡 001 - **001.review-jules.md** _(Pending)_ Get a critical review from Jules.

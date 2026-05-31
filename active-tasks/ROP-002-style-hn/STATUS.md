@@ -2,7 +2,7 @@
 
 ## Goal
 - Establish the `style-hn` skill as a core communication standard and produce a
-high-signal Show HN post for the ROP/HROP protocol.
+  high-signal Show HN post for the ROP/HROP protocol.
 
 ## Packet Status
 - 🟢 001 - **001.create-hn-skill.md** _(Complete)_ Initial creation of the HN skill.

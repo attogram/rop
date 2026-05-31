@@ -1,8 +1,8 @@
 # 🟢 ROP-004 - ROP-004-diagnostic-fluff - 2026-05-31 11:35 UTC
 
 ## Goal
-- Define and calculate the FLUFFP metric for the current repository and create a
-`fluffp.md` report.
+- Define and calculate the FLUFFP metric for the current repository and create
+  a `fluffp.md` report.
 
 ## Packet Status
 - 🟢 001 - **001.fluffp-audit-jules.md** _(Complete)_ Get fluff review from Jules.

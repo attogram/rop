@@ -2,7 +2,7 @@
 
 ## Goal
 - Remove individual pointer files and consolidate them into a `pointers.md`
-guide.
+  guide.
 
 ## Packet Status
 - 🟢 001 - **001.consolidate-pointers.md** _(Complete)_ Move pointer content and remove originals.

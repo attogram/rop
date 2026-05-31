@@ -23,5 +23,6 @@ Our implementation of an Opinionated High ROP Workflow.
 ## Next Steps
 - Execute remaining packets in ROP-001 and ROP-002.
 - Execute ROP-007 to reconcile core documentation.
+- Update all status files to new formatting rules (ROP-009).
 
 _(PM Jules)_

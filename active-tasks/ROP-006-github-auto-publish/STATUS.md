@@ -2,7 +2,7 @@
 
 ## Goal
 - Setup GitHub Actions to auto-publish the repository as a static site to
-attogram.github.io.
+  attogram.github.io.
 
 ## Packet Status
 - 🟡 001 - **001.dogfood-setup-github-action.md** _(Pending)_ Create the GH Action workflow.

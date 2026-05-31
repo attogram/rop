@@ -14,7 +14,7 @@ can be executed by any entity (AI or Human) with zero prior context.
 ## The Self-Containment Standard
 
 A Packet is considered "Faulty" if the Worker must stop and ask for
-information that should have been provided. To prevent faulty packets, 
+information that should have been provided. To prevent faulty packets,
 every file MUST include:
 
 - Context: The "Why" and "What" of the work.
@@ -27,6 +27,9 @@ every file MUST include:
 - Plan: The exact, sequential steps (1, 2, 3) to complete the work.
 - Report Requirements: Precise list of artifacts or data the Worker must
   capture in their Report.
+- Appendix: For packets requiring a technical review or architectural
+  analysis, the PM MUST include a `## Appendix` section containing the full
+  content of relevant source files (e.g., README.md, AGENTS.md, ROP.md).
 
 ## Rules for the PM
 
@@ -36,6 +39,9 @@ every file MUST include:
    `skills/prefs-markdown`), you MUST list it in the Context.
 3. Proof of Design: Do not create a "Code Change" packet until a "Research"
    or "Design" packet has identified the exact lines of code to be modified.
+4. Inline Context: When assigning a packet to an agent for review, all
+   relevant context MUST be provided inline in the Appendix to ensure 100%
+   self-containment and avoid context drift.
 
 ## Faulty Packet Check
 

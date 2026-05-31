@@ -5,7 +5,7 @@ description: >
     Generates a well-formatted report, ready for copy-pasting.
 ---
 
-# Skill: Task Status Update v3.9
+# Skill: Task Status Update v4.0
 This skill drafts a clear, concise, and effective status update for a task.
 The final output MUST be provided as plain Markdown text
 to ensure easy copy-pasteability.
@@ -19,8 +19,7 @@ to ensure easy copy-pasteability.
 - High Signal: Omit conversational filler, decorative spacers, and emojis.
 - Report, Don't Direct: Do not give commands to the user.
 - PII Compliance: Do not include real names, email addresses, or other
-  personally identifiable information in reports. Remove the User mention
-  entirely from footers.
+  personally identifiable information in reports.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax.
   Raw URLs are allowed only if completely necessary and appropriate. Links
   are only permitted in `README.md` and MUST NOT be used in `STATUS.md`.
@@ -44,24 +43,25 @@ Generate your report using this exact structural template:
 - {Single-sentence summary of the overall task objective}
 
 ## Packet Status
-- 🟢 001 - **{packetfilename}** _(Complete)_ {Brief Description}
-- 🟠 002 - **{packetfilename}** _(In Progress)_ {Brief Description}
-- 🟡 003 - **{packetfilename}** _(Pending)_ {Brief Description}
-- 🔴 004 - **{packetfilename}** _(Blocked)_ {Brief Description}
+- 🟢 001 - **{name}** _(Complete)_ {Brief Description}
+- 🟠 002 - **{name}** _(In Progress)_ {Brief Description}
+- 🟡 003 - **{name}** _(Pending)_ {Brief Description}
+- 🔴 004 - **{name}** _(Blocked)_ {Brief Description}
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-_({Agents})_
+({PM agents}, {Worker agents})
 ```
 
 ## Placeholders
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
 - {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
-- {packetfilename}: The actual filename of the packet (e.g. `001.name.md`).
-- {Agents}: Comma-separated list of all agents (PMs and Workers)
-  who have worked on this task, found in TASK.md Log or packet reports.
+- {PM agents}: Comma-separated list of all PM agents who have worked on this
+  task, each prefixed with "PM ". The current PM MUST be listed first.
+- {Worker agents}: Comma-separated list of all Worker agents who have worked
+  on this task, each prefixed with "Worker ".
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

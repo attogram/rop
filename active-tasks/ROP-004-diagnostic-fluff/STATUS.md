@@ -13,4 +13,4 @@
 ## Next Steps
 - Begin collecting fluff reviews starting with Packet 001.
 
-(PM Jules, Worker Jules)
+(via Jules)

@@ -12,4 +12,4 @@ high-signal Show HN post for the ROP/HROP protocol.
 ## Next Steps
 - Execute Packet 003 to draft the Show HN post.
 
-(PM Jules, Worker Jules)
+(via Jules)

@@ -11,4 +11,4 @@ guide.
 ## Next Steps
 - Task completed.
 
-(PM Jules, Worker Jules)
+(via Jules)

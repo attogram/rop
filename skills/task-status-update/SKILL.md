@@ -22,7 +22,8 @@ to ensure easy copy-pasteability.
   personally identifiable information in reports. Remove the User mention
   entirely from footers.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax.
-  Raw URLs are allowed only if completely necessary and appropriate.
+  Raw URLs are allowed only if completely necessary and appropriate. Links
+  are only permitted in `README.md` and MUST NOT be used in `STATUS.md`.
 - Timestamps: Use UTC. You MUST verify the current date and time before
   reporting by using available tools (e.g., `date` in bash) or checking the
   system prompt. The format MUST be `{YYYY-MM-DD HH:MM UTC}`.
@@ -43,21 +44,22 @@ Generate your report using this exact structural template:
 - {Single-sentence summary of the overall task objective}
 
 ## Packet Status
-- 🟢 001 - {Packet Name} - Complete - {Brief Description}
-- 🟠 002 - {Packet Name} - In Progress - {Brief Description}
-- 🟡 003 - {Packet Name} - Pending - {Brief Description}
-- 🔴 004 - {Packet Name} - Blocked - {Brief Description}
+- 🟢 001 - **{packetfilename}** _(Complete)_ {Brief Description}
+- 🟠 002 - **{packetfilename}** _(In Progress)_ {Brief Description}
+- 🟡 003 - **{packetfilename}** _(Pending)_ {Brief Description}
+- 🔴 004 - **{packetfilename}** _(Blocked)_ {Brief Description}
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-(via {Agents})
+_({Agents})_
 ```
 
 ## Placeholders
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
 - {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
+- {packetfilename}: The actual filename of the packet (e.g. `001.name.md`).
 - {Agents}: Comma-separated list of all agents (PMs and Workers)
   who have worked on this task, found in TASK.md Log or packet reports.
 

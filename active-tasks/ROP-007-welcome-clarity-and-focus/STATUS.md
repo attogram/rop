@@ -5,13 +5,12 @@
 concepts without duplication, and update the discovery skill with new rules.
 
 ## Packet Status
-- 🟢 001 - reconcile-core-docs - Task done - Update ROP, HROP, and AGENTS.md
-  definitions.
-- 🟢 002 - standardize-workflows - Task done - Define FLUFFP and REVIEWS protocols.
-- 🟢 003 - update-discovery-skill - Task done - Enhance discover-goal skill rules.
-- 🟢 004 - refine-math-and-charts - Task done - Consolidate and improve ROP math/charts.
+- 🟢 001 - **001.reconcile-core-docs.md** _(Complete)_ Update ROP, HROP, and AGENTS.md definitions.
+- 🟢 002 - **002.standardize-workflows.md** _(Complete)_ Define FLUFFP and REVIEWS protocols.
+- 🟢 003 - **003.update-discovery-skill.md** _(Complete)_ Enhance discover-goal skill rules.
+- 🟢 004 - **004.refine-math-and-charts.md** _(Complete)_ Consolidate and improve ROP math/charts.
 
 ## Next Steps
 - All current packets completed. Perform final consistency check and submit.
 
-(via Jules)
+_(Jules)_

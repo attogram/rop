@@ -1,34 +1,40 @@
 # Task: Diagnostic Fluff
 # Ticket: ROP-004
 
-Analyze the repository for "fluff" - non-operational, redundant, or noop
-tokens - and establish a metric for FLUFFP.
+Analyze the repository for "fluff" using the FLUFFP metric and the
+standardized reporting loop.
 
 ## Goal
 
-Define and calculate the FLUFFP metric for the current repository and create a
-`fluffp.md` report with reviews of the repo's signal-to-noise ratio.
+Define and calculate the FLUFFP metric (0-100) for the current repository and
+create a `fluffp.md` report with reviews of the repo's signal-to-noise ratio.
 
 ## Definition of Done
 
-- FLUFFP metric defined and calculated.
+- FLUFFP metric calculated and documented.
 - `fluffp.md` created in the repository root.
 - Reviews from Jules, Gemini, and Copilot included.
+- Standardized loop completed: Agent reports -> PM Summary -> User Reply.
 
 ## Master Plan
 
-- Phase 1: Review Collection
-- Phase 2: Synthesis and Reporting
+- Phase 1: Review Collection and Synthesis
+- Phase 2: User Feedback and Loop Restart
 
 ## Packet List
 
 - 001 - fluffp-audit-jules - Ready - Get fluff review from Jules.
 - 002 - fluffp-audit-gemini - Ready - Get fluff review from Gemini.
 - 003 - fluffp-audit-copilot - Ready - Get fluff review from Copilot.
-- 004 - consolidate-fluffp-report - Ready - Create fluffp.md with results.
+- 004 - consolidate-fluffp-report - Ready - Update fluffp.md with results and
+  PM summary.
+- 005 - user-feedback-fluffp - Pending - Packet for User to reply to the
+  consolidated fluffp summary.
 
 ## Log
 
 - 2026-05-31: Task initialized.
 - 2026-05-31: Renamed metric to FLUFFP and report to fluffp.md. Initialized
   packets for execution.
+- 2026-05-31: Updated to follow standardized reporting loop and FLUFFP 0-100
+  definition.

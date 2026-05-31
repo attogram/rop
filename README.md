@@ -21,9 +21,10 @@ Our implementation of an Opinionated High ROP Workflow.
 - 🟢 [ROP-004](active-tasks/ROP-004-diagnostic-fluff/TASK.md) - **diagnostic-fluff** _(Finished)_ Signal-to-noise ratio analysis.
 - 🟢 [ROP-005](active-tasks/ROP-005-pointers-cleanup/TASK.md) - **pointers-cleanup** _(Done)_ Cleanup of root pointer files.
 - 🟡 [ROP-006](active-tasks/ROP-006-github-auto-publish/TASK.md) - **github-auto-publish** _(Pending)_ Auto-publish to GitHub Pages.
+- 🟠 [ROP-007](active-tasks/ROP-007-welcome-clarity-and-focus/TASK.md) - **welcome-clarity-and-focus** _(In Progress)_ Reconcile docs and skills.
 
 ## Next Steps
 - Execute remaining packets in ROP-001 and ROP-002.
-- Begin diagnostic reviews and fluff audit.
+- Execute ROP-007 to reconcile core documentation.
 
 _(PM Jules)_

@@ -1,31 +1,45 @@
-# High ROP Workflow
-The High ROP (HROP) workflow is the specific implementation of the Restart Often Protocol ([ROP](ROP.md)) used in this repository.
+# High ROP Workflow (HROP)
+HROP is our opinionated implementation of High ROPness in a workflow.
 
-## The Role of AGENTS.md
-The [AGENTS.md](AGENTS.md) file is the primary contract for all agent behavior in this repo.
-It defines the state management, roles, and the available skill registry.
-Adherence to AGENTS.md is mandatory for both PM and Worker roles to
-ensure consistent handoffs and high ROP efficiency.
+## Target Audience
+HROP is geared for small teams (the 1-3 member "sweet spot"). While it can
+scale further, increased team size often leads to a rise in "janitor fails"
+where state management becomes fragmented.
+
+## Human Summary of AGENTS.md
+AGENTS.md is the formal contract for HROP. In simple terms:
+- **Tasks** are the big goals.
+- **Packets** are the small, self-contained work units.
+- **PMs** (Project Managers) manage the state and task directories.
+- **Workers** execute the individual packets.
+- **User** is the final authority (Gatekeeper) who approves all work.
+
+Everything is tracked in `active-tasks/{taskName}/` using `TASK.md`, `STATUS.md`,
+and the `packets/` subdirectory to ensure persistent memory and easy recovery
+from context restarts.
 
 ## Implementation
-To maintain high ROP, the PM and/or User must save state continuously to the
-repository within the `active-tasks/{taskName}/` directory:
-- `TASK.md`: The internal ledger containing Goal, Definition of Done, Master
-  Plan, and Log.
-- `STATUS.md`: The macro dashboard for tracking overall progress.
-- `packets/`: A subdirectory containing zero-padded, sequential work units
-  (e.g., `001.discovery.md`). Every packet must include a "Pre-requisites"
-  section listing required tools and access.
-- **Reporting**: Every packet report must identify the Worker.
-- **Status Updates**: The `STATUS.md` footer must list all agents (PMs
-  and Workers) and users who have worked on the task, derived from history.
+To maintain high ROP, you must save state continuously. The PM/User
+collaboratively define Goals and Definitions of Done, then break the work into
+sequential packets. After each packet, the User reviews the results and decides
+whether to approve, modify, or pivot.
 
-## Session Management
-- After every packet is completed and reviewed, the User should ideally restart
-  in a new session to clear the LLM's active context.
-- The User can (and should) restart anytime context becomes cluttered or the
-  agent's performance begins to degrade.
+## Reporting & Metrics
+We use standardized reporting loops for qualitative and quantitative analysis.
 
-By following the HROP workflow, you ensure that each packet remains focused,
-costs remain linear, and agent success rates remain high by preventing
-context-induced performance degradation.
+### FLUFFP Metric
+FLUFFP is a metric (0-100) of wasted tokens vs. required tokens in a data
+packet. It provides insight into possible optimizations per repo, task, or
+packet.
+
+### Standardized Reporting Loop
+For `fluffp.md` and `reviews.md`, the workflow follows a strict loop:
+1. **Assignment**: PM assigns packets to each agent (e.g., Gemini, Copilot,
+   Jules).
+2. **Intake**: PM collects all agent reports.
+3. **Listing**: PM lists all reports in the target file (`{file}.md`).
+4. **Distillation**: PM adds a summary with the most important issues
+   distilled from all reports.
+5. **User Feedback**: PM creates a packet for the User to reply to the summary.
+6. **Restart**: Once approved, the loop restarts with the previous reports and
+   User replies included as context.

@@ -1,15 +1,12 @@
 # Restart Often Protocol (ROP)
-The Restart Often Protocol (ROP) is a method of working with AI Agents that descreases costs and increases developer happiness.
-
-Think of it as the *"Commit early, commit often"* philosophy applied to Agent workflows. 
-
-The higher your ROP score, the leaner your architecture, and the further your compute budget stretches.
-
+- The Restart Often Protocol (ROP) is a method of working with AI Agents.
+- Developers have the *Commit early, commit often, use git with working branches* philosphy.
+- ROP applies that philosphy to Agent Workflow.
+- Find your ROP sweetspot to make your architecture leaner and streatch your compute budget.
 - [ROP.md](ROP.md) - Restart Often Protocol overview
 
 # High ROP Workflow (HROP)
 Our implementation of an Opinionated High ROP Workflow.
-
 - [HROP.md](HROP.md) - High ROP overview
 - [AGENTS.md](AGENTS.md) - Agents Protocol
 - [skills/](skills) - Agent skills for HROP

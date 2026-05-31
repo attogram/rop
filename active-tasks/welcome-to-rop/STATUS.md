@@ -9,6 +9,7 @@ Protocol (ROP) repository.
 - 🟢 002 - Protocol Alignment - Task done - Standardizing directory structure.
 - 🟢 003 - Review What We Got - Task done - Consolidating docs and skills.
 - 🟡 004 - better-ropness - Pending - Improve documentation and research.
+- 🟡 005 - fix-architecture-table - Pending - Fix issues in ROP.md table.
 - 🟢 006 - define-usps - Task done - Identify USPs for Developers and
 Management.
 - 🟡 007 - placeholder-packet - Pending - {placeholder}
@@ -18,4 +19,4 @@ skill.
 ## Next Steps
 - Proceed with remaining documentation improvements in Packet 004.
 
-(via Jules and User)
+(via Jules)

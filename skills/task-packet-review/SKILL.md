@@ -8,7 +8,7 @@ description: >
 
 # Skill: Task Packet Review v1.0
 
-This skill ensures that the Orchestrator does not approve faulty or
+This skill ensures that the PM does not approve faulty or
 incomplete work. Every report must be audited against the original 
 Packet and the global project standards.
 
@@ -19,7 +19,7 @@ A Packet Report is only valid if it passes all of the following:
 1. Requirement Alignment: Does the Report contain every item listed in the
    "Report Requirements" section of the Packet?
 2. Plan Execution: Were all steps in the "Plan" followed? If not, did the
-   Executor provide a valid justification for the deviation?
+   Doer provide a valid justification for the deviation?
 3. Quality Standards: Does the work pass project-specific linting, 
    type-checking, and test suites?
 4. Criteria Alignment: Does this specific unit of work satisfy the
@@ -30,11 +30,11 @@ A Packet Report is only valid if it passes all of the following:
 - Pass: The report is complete and verified. Proceed to the Gatekeeper
   Checkpoint.
 - Fail: The report is missing data, has failed tests, or deviates from the
-  plan without explanation. Send the Packet back to the Executor for
+  plan without explanation. Send the Packet back to the Doer for
   remediation.
 
 ## No Blind Trust
 
-The Orchestrator must independently verify the claims in the Report. If 
-the Executor says "All tests passed," the Orchestrator should confirm 
+The PM must independently verify the claims in the Report. If
+the Doer says "All tests passed," the PM should confirm
 the test output or rerun the command before approving.

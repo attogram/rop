@@ -24,10 +24,10 @@ Every packet file must contain five distinct sections:
 3. Plan: The exact, sequential steps to complete the packet work.
 4. Report Requirements: What validation artifacts or data must be collected.
 5. Report: The captured results and proof of execution appended upon completion.
-   The Executor MUST include their `{Agent Name}` in this section.
+   The Doer MUST include their `{Agent Name}` in this section.
 
 ## 2. Directory State & State Files
-The Orchestrator is fully responsible for creating and maintaining the
+The PM is fully responsible for creating and maintaining the
 task directory structure to ensure persistent memory and crash recovery.
 ```text
 active-tasks/{taskName}/
@@ -39,17 +39,17 @@ active-tasks/{taskName}/
 ```
 
 ## 3. Core Operational Workflow
-1. Discover Intent (Orchestrator & User)
-2. Identify State (Orchestrator)
-3. Baseline Goal & Definition of Done (Orchestrator & User)
-4. Establish Environment (Orchestrator)
-5. Formulate Master Plan (Orchestrator & User)
-6. Initialize Packets (Orchestrator)
-7. Offer Handoff Choice (Orchestrator)
+1. Discover Intent (PM & User)
+2. Identify State (PM)
+3. Baseline Goal & Definition of Done (PM & User)
+4. Establish Environment (PM)
+5. Formulate Master Plan (PM & User)
+6. Initialize Packets (PM)
+7. Offer Handoff Choice (PM)
 8. Select Handoff Option (User)
-9. Execute Packet (Executor)
-10. Append Report (Executor)
-11. Review Results (Orchestrator & User)
+9. Execute Packet (Doer)
+10. Append Report (Doer)
+11. Review Results (PM & User)
 12. Gatekeeper Checkpoint (User)
 13. Resolution -> (Approve -> Loop) OR (Modify -> Reset)
 
@@ -64,7 +64,7 @@ active-tasks/{taskName}/
    with validated Goal, Definition of Done, and initial Master Plan.
 
 ### Phase 2: Packet Execution Loop
-For each packet in the Master Plan, the Orchestrator must:
+For each packet in the Master Plan, the PM must:
 1. Offer Handoff Options: Present the User with four explicit choices:
     - Option 1: Handoff to Me ({Your Agent Name}) to execute in this session.
     - Option 2: Handoff to Subagent (generate structured prompt for handoff).
@@ -81,17 +81,21 @@ For each packet in the Master Plan, the Orchestrator must:
     - Other.
 
 ## 4. Roles and Responsibilities
-- Orchestrator Role: Maintains task directory, tracks Master Plan, updates
-  Log (significant events/decisions), and guides the packet lifecycle.
-- Executor Role: Executes a specific, self-contained unit of work
-  (Packet) autonomously.
+- PM Role (Project Manager, PM, Janitor, all around fix-it-guy):
+  As the Orchestrating Agent (PM), you maintain the task directory, track the
+  Master Plan, update the Log (significant events/decisions), and guide the
+  packet lifecycle. You MUST enforce NO PII (real names, emails, etc.) across
+  all actions and documentation.
+- Doer Role (Packet Doer, the crew, the employee, the mate, the seat,
+  the guy): As the Packet Doer (Doer), you execute a specific,
+  self-contained unit of work (Packet) autonomously.
 - User (Gatekeeper): The final authority on all decisions, defines the
   Definition of Done, and approves packet results.
 
 ## 5. Protocols & Available Skills
 ### System Protocols
-- Agent Roles: Alternate between Orchestrator Role (managing state, logs, and
-  workflow) and Executor Role (executing an assigned micro-plan).
+- Agent Roles: Alternate between the PM Role (managing state, logs, and
+  workflow) and the Doer Role (executing an assigned micro-plan).
 - Reference Template: Use [`active-tasks/example-task`](../active-tasks/example-task)
   as the blueprint for formatting markdown structures, logs, and status
   updates. The example directory contains:
@@ -106,10 +110,3 @@ For each packet in the Master Plan, the Orchestrator must:
 - includeFile('skills/task-packet-create/SKILL.md') # New packet initialization
 - includeFile('skills/task-packet-review/SKILL.md') # Completed packet review
 - includeFile('skills/task-status-update/SKILL.md') # Task status reporting
-
-## 6. Glossary & Keywords
-- **dogfood**: This indicates that we are using the feature, protocol, or
-  standard within this repository itself to validate its utility and
-  refine its implementation (i.e., "eating our own dogfood").
-- **noop**: Tokens that have no meaning for the task or packet.
-- **TASKID**: The standard task ID format for this repository is `ROP-####`.

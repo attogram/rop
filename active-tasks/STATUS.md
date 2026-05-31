@@ -15,4 +15,4 @@
 - Execute remaining packets in ROP-001 and ROP-002.
 - Begin diagnostic reviews and fluff audit.
 
-(via Jules and User)
+(via Jules)

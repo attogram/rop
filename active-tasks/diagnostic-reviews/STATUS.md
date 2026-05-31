@@ -13,4 +13,4 @@ constructive reviews of ROP/HROP.
 ## Next Steps
 - Begin collecting reviews starting with Packet 001.
 
-(via Jules and User)
+(via Jules)

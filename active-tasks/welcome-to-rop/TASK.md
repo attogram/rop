@@ -28,25 +28,27 @@ Workflow, while adopting the workflow itself for project management.
 - 002 - Protocol Alignment - Complete - Standardizing directory structure.
 - 003 - Review What We Got - Complete - Consolidating docs and syncing skills.
 - 004 - better-ropness - Pending - Improve documentation and research.
+- 005 - fix-architecture-table - Pending - Fix issues in ROP.md table.
 - 006 - define-usps - Complete - Identify USPs for Developers and Management.
 - 007 - placeholder-packet - Pending - {placeholder}
 - 008 - update-status-skill - Complete - Update the status reporting skill.
 
 ## Log
 
-- 2025-05-14: Orchestrator aligned task with AGENTS.md protocol. Renamed
+- 2025-05-14: PM aligned task with AGENTS.md protocol. Renamed
   tasks/ to active-tasks/.
 - 2025-05-14: Initialized TASK.md with Master Plan and Packet List.
 - 2025-05-30: Initialized Packet 003: Review What We Got.
-- 2026-05-30: Packet 003 executed by Jules (Executor role).
-- 2026-05-30: Orchestrator reviewed Packet 003. Verified doc consolidation
+- 2026-05-30: Packet 003 executed by Jules (Doer role).
+- 2026-05-30: PM reviewed Packet 003. Verified doc consolidation
   and applied line-length fixes to AGENTS.md and skills.
-- 2026-05-30: Orchestrator initialized Packet 004: better-ropness.
+- 2026-05-30: PM initialized Packet 004: better-ropness.
   Transitioned to Phase 2.
-- 2026-05-30: Orchestrator initialized Packet 006: define-usps.
-- 2026-05-30: Packet 006 executed by Jules (Executor role). USPs defined for
+- 2026-05-30: PM initialized Packet 006: define-usps.
+- 2026-05-30: Packet 006 executed by Jules (Doer role). USPs defined for
   Management and Developers.
 - 2026-05-30: Packet 008 executed. Updated task-status-update skill to v3.8.
-- 2026-05-30: Orchestrator initialized Packet 009: create-style-hn-skill.
-- 2026-05-30: Packet 009 executed by Jules (Executor role).
+- 2026-05-30: PM initialized Packet 009: create-style-hn-skill.
+- 2026-05-30: Packet 009 executed by Jules (Doer role).
 - 2026-05-31: Migrated HN-related packets (005, 009, 010) to style-hn task.
+- 2026-05-31: Initialized Packet 005: fix-architecture-table.

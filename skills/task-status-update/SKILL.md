@@ -43,15 +43,15 @@ Generate your report using this exact structural template:
 - {Single-sentence summary of the overall task objective}
 
 ## Packet Status
-- 🟢 001 - {Packet Name} - Complete - {Brief Description}
-- 🟠 002 - {Packet Name} - In Progress - {Brief Description}
-- 🟡 003 - {Packet Name} - Pending - {Brief Description}
-- 🔴 004 - {Packet Name} - Blocked - {Brief Description}
+- 🟢 001 - **{Packet Name}** _(Complete)_ {Brief Description}
+- 🟠 002 - **{Packet Name}** _(In Progress)_ {Brief Description}
+- 🟡 003 - **{Packet Name}** _(Pending)_ {Brief Description}
+- 🔴 004 - **{Packet Name}** _(Blocked)_ {Brief Description}
 
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-(via {Agents})
+_({Agents})_
 ```
 
 ## Placeholders

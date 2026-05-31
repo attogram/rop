@@ -37,6 +37,20 @@ T = n * s + [n(n - 1) / 2] * s * (1 - r)
 | 80% | 1.9M | $19.00 | −65% |
 | 100% | 1.0M | $10.00 | −82% |
 
+### Janitor Tax (Complexity vs. Team Size)
+The Janitor Tax represents the coordination overhead and state fragmentation
+that occurs as team size (N) increases. Complexity (C) grows quadratically.
+
+Formula: $C = N^2$
+
+| Team Size (N) | Complexity (C) | Janitor Tax | Status |
+| :--- | :--- | :--- | :--- |
+| 1 | 1 | 0% | Solo (Ideal) |
+| 2 | 4 | 300% | Lean |
+| 3 | 9 | 800% | Sweet Spot Limit |
+| 4 | 16 | 1500% | Fragmentation Risk |
+| 5 | 25 | 2400% | High Janitor Tax |
+
 ### Agent Performance Impact
 Larger contexts cause performance degradation. High ROPness keeps context lean,
 maintaining higher success rates.

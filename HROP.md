@@ -2,9 +2,14 @@
 HROP is our opinionated implementation of High ROPness in a workflow.
 
 ## Target Audience
-HROP is geared for small teams (the 1-3 member "sweet spot"). While it can
-scale further, increased team size often leads to a rise in "janitor fails"
-where state management becomes fragmented.
+HROP is designed for small teams (the 1-3 member "sweet spot"). It is built
+as a "drop-in the agents.md and go" solution for rapid scaling without
+immediate infrastructure investment.
+
+### The Janitor Tax
+While HROP can scale further, increased team size leads to a rise in "janitor
+fails" where state management becomes fragmented. The coordination complexity
+(Janitor Tax) increases non-linearly with each additional user beyond the first.
 
 ## Human Summary of AGENTS.md
 AGENTS.md is the formal contract for HROP. In simple terms:

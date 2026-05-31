@@ -1,5 +1,5 @@
 # Task: ROP Assistant
-# Ticket: ROP-007
+# Ticket: ROP-009
 
 Integrate the ROP Assistant React component to provide an interactive interface
 for the protocol.
@@ -30,3 +30,4 @@ its deployment.
 ## Log
 
 - 2026-05-31: Task initialized by Jules (PM).
+- 2026-05-31: Task ID updated to ROP-009 to avoid collision with ROP-007.

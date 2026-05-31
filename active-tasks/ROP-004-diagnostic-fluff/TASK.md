@@ -23,10 +23,13 @@ create a `fluffp.md` report with reviews of the repo's signal-to-noise ratio.
 
 ## Packet List
 
-- 001 - fluffp-audit-jules - Complete - Get fluff review from Jules.
-- 002 - fluffp-audit-gemini - Complete - Get fluff review from Gemini.
-- 003 - fluffp-audit-copilot - Complete - Get fluff review from Copilot.
-- 004 - consolidate-fluffp-report - Complete - Update fluffp.md with results.
+- 001 - fluffp-audit-jules - Ready - Get fluff review from Jules.
+- 002 - fluffp-audit-gemini - Ready - Get fluff review from Gemini.
+- 003 - fluffp-audit-copilot - Ready - Get fluff review from Copilot.
+- 004 - consolidate-fluffp-report - Ready - Update fluffp.md with results and
+  PM summary.
+- 005 - user-feedback-fluffp - Pending - Packet for User to reply to the
+  consolidated fluffp summary.
 
 ## Log
 

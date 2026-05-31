@@ -20,7 +20,7 @@ create a `pointers.md` guide that explains how to add redirects to AGENTS.md.
 
 ## Packet List
 
-- 001 - consolidate-pointers - Complete - Move pointer content to pointers.md
+- 001 - consolidate-pointers - Pending - Move pointer content to pointers.md
   and remove originals.
 
 ## Log

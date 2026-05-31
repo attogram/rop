@@ -26,7 +26,12 @@ every file MUST include:
   capabilities (web search).
 - Plan: The exact, sequential steps (1, 2, 3) to complete the work.
 - Report Requirements: Precise list of artifacts or data the Worker must
-  capture in their Report.
+  capture in their Report. Instructions MUST include: "Append your report to
+  bottom of the packet file. If you do not have write access to the repo, then
+  show your review to the user in an easy to copy box."
+- Appendix: A `## Appendix` section containing the full content of all files
+  in scope for the packet. For core protocol reviews, this includes full
+  copies of AGENTS.md, README.md, ROP.md, HROP.md, and all files in `skills/`.
 
 ## Rules for the PM
 

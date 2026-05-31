@@ -11,7 +11,9 @@ the User decides when a TASK or PACKET is "Done".
 - **TASK**: The macro objective (bug fix, feature, research). Tracked via
   `TASK.md` (ledger) and `STATUS.md` (dashboard).
 - **PACKET**: A self-contained unit of work that can be executed by anyone
-  with zero prior knowledge.
+  with zero prior knowledge. Packets MUST include a `## Appendix` with full
+  content of all files in scope of the packet (e.g. AGENTS.md, README.md,
+  ROP.md, HROP.md, and relevant skills).
 
 ## 2. Directory Structure
 ```text
@@ -26,7 +28,10 @@ active-tasks/{taskName}/
 2. **Environment**: PM initializes task directory and `TASK.md`.
 3. **Execution**: Work is broken into packets. PM offers handoff options to
    the User (Self, Subagent, Human, Other).
-4. **Review**: Worker appends a Report. PM and User review against the DoD.
+4. **Review**: Worker appends their report to the bottom of the packet file.
+   If the Worker does not have write access to the repo, they must show their
+   review to the user in an easy to copy box. PM and User review against
+   the DoD.
 5. **Checkpoint**: User approves or requests modifications.
 
 ## 4. Roles

@@ -23,12 +23,17 @@ improvement.
 
 ## Packet List
 
-- 001 - review-jules - Pending - Get a critical review from Jules.
-- 002 - review-gemini - Pending - Get a critical review from Gemini.
-- 003 - review-copilot - Pending - Get a critical review from Copilot.
+- 001 - review-jules - Superseded - Replaced by packet 005.
+- 002 - review-gemini - Superseded - Replaced by packet 006.
+- 003 - review-copilot - Superseded - Replaced by packet 007.
+- 005 - review-jules-v2 - Pending - New self-contained review packet for Jules.
+- 006 - review-gemini-v2 - Pending - New self-contained review packet for
+  Gemini.
+- 007 - review-copilot-v2 - Pending - New self-contained review packet for
+  Copilot.
 - 004 - consolidate-reviews - Pending - Update reviews.md with all gathered
   feedback and PM summary.
-- 005 - user-feedback-reviews - Pending - Packet for User to reply to the
+- 008 - user-feedback-reviews - Pending - Packet for User to reply to the
   consolidated reviews summary.
 
 ## Log

@@ -1,4 +1,4 @@
-# 🟠 active-tasks - 2026-05-31 11:40 UTC
+# 🟠 active-tasks - 2026-05-31 18:48 UTC
 
 ## Goal
 - Linear cost scaling and high signal-to-noise ratio in agent workflows.
@@ -10,9 +10,10 @@
 - 🟢 [ROP-004](ROP-004-diagnostic-fluff/TASK.md) - diagnostic-fluff - Finished - Signal-to-noise ratio analysis.
 - 🟡 [ROP-005](ROP-005-pointers-cleanup/TASK.md) - pointers-cleanup - Pending - Cleanup of root pointer files.
 - 🟡 [ROP-006](ROP-006-github-auto-publish/TASK.md) - github-auto-publish - Pending - Auto-publish to GitHub Pages.
+- 🟠 [ROP-007](ROP-007-welcome-clarity-and-focus/TASK.md) - welcome-clarity-and-focus - In Progress - Reconcile docs and skills.
 
 ## Next Steps
 - Execute remaining packets in ROP-001 and ROP-002.
-- Begin diagnostic reviews and fluff audit.
+- Execute ROP-007 to reconcile core documentation.
 
 (via Jules)

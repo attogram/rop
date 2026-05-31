@@ -1,16 +1,16 @@
-# 🟡 ROP-003-diagnostic-reviews - 2026-05-31 11:35 UTC
+# 🟡 ROP-003-diagnostic-reviews - 2026-05-31 11:45 UTC
 
 ## Goal
 - Create a comprehensive `reviews.md` document containing critical and
 constructive reviews of ROP/HROP.
 
 ## Packet Status
-- 🟡 001 - review-jules - Pending - Get a critical review from Jules.
+- 🟢 001 - review-jules - Done - Get a critical review from Jules.
 - 🟡 002 - review-gemini - Pending - Get a critical review from Gemini.
 - 🟡 003 - review-copilot - Pending - Get a critical review from Copilot.
 - 🟡 004 - consolidate-reviews - Pending - Create reviews.md with all feedback.
 
 ## Next Steps
-- Begin collecting reviews starting with Packet 001.
+- Proceed with Packet 002 (review-gemini).
 
-(via Jules)
+(via Jules with Jules)

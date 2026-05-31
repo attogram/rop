@@ -6,16 +6,12 @@
   rules.
 
 ## Packet Status
-- 🟢 001 - **reconcile-core-docs** _(Complete)_ Update ROP, HROP, and AGENTS.md
-  definitions.
-- 🟢 002 - **standardize-workflows** _(Complete)_ Define FLUFFP and REVIEWS
-  protocols.
-- 🟢 003 - **update-discovery-skill** _(Complete)_ Enhance discover-goal skill
-  rules.
-- 🟢 004 - **refine-math-and-charts** _(Complete)_ Consolidate and improve ROP
-  math/charts.
+- 🟢 001 - **001.reconcile-core-docs.md** _(Complete)_ Update ROP, HROP, and AGENTS.md definitions.
+- 🟢 002 - **002.standardize-workflows.md** _(Complete)_ Define FLUFFP and REVIEWS protocols.
+- 🟢 003 - **003.update-discovery-skill.md** _(Complete)_ Enhance discover-goal skill rules.
+- 🟢 004 - **004.refine-math-and-charts.md** _(Complete)_ Consolidate and improve ROP math/charts.
 
 ## Next Steps
 - All current packets completed. Perform final consistency check and submit.
 
-_(PM Jules)_
+_(Jules)_

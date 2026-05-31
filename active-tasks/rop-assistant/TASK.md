@@ -1,5 +1,5 @@
 # Task: ROP Assistant
-# Ticket: ROP-008
+# Ticket: ROP-007
 
 Integrate the ROP Assistant React component to provide an interactive interface
 for the protocol.

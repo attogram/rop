@@ -32,4 +32,4 @@ Our implementation of an Opinionated High ROP Workflow.
 - Execute remaining packets in ROP-001 and ROP-002.
 - Begin diagnostic reviews and fluff audit.
 
-(via Jules)
+_(PM Jules)_

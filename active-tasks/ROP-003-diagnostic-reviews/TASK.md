@@ -23,7 +23,7 @@ improvement.
 
 ## Packet List
 
-- 001 - review-jules - Done - Get a critical review from Jules.
+- 001 - review-jules - Pending - Get a critical review from Jules.
 - 002 - review-gemini - Pending - Get a critical review from Gemini.
 - 003 - review-copilot - Pending - Get a critical review from Copilot.
 - 004 - consolidate-reviews - Pending - Create reviews.md with all gathered
@@ -32,4 +32,3 @@ improvement.
 ## Log
 
 - 2026-05-31: Task initialized.
-- 2026-05-31: Packet 001 (review-jules) completed by Worker Jules.

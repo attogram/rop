@@ -1,0 +1,23 @@
+name: Jules Issue Agent
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  run-jules:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: google-labs-code/jules-invoke@v1
+        with:
+          prompt: |
+            The following GitHub issue was created or updated.
+            Read the issue and take appropriate action as orchestrator agent
+            per repos AGENTS.md protocol.
+
+            Issue content:
+            ${{ github.event.issue.title }}
+            ${{ github.event.issue.body }}
+          jules_api_key: ${{ secrets.JULES_API_KEY }}

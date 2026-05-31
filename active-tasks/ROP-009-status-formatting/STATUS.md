@@ -1,4 +1,4 @@
-# 🟠 ROP-008 - ROP-008-status-formatting - 2026-05-31 19:55 UTC
+# 🟠 ROP-009 - ROP-009-status-formatting - 2026-05-31 19:55 UTC
 
 ## Goal
 - Update the `task-status-update` skill and all status-related files in the

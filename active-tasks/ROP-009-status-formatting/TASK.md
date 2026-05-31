@@ -1,4 +1,4 @@
-# TASK: ROP-008-status-formatting
+# TASK: ROP-009-status-formatting
 
 ## Goal
 - Update the `task-status-update` skill and all status-related files in the

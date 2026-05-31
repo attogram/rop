@@ -2,17 +2,17 @@
 # Ticket: ROP-004
 
 Analyze the repository for "fluff" - non-operational, redundant, or noop
-tokens - and establish a metric for FLUFF%.
+tokens - and establish a metric for FLUFFP.
 
 ## Goal
 
-Define and calculate the FLUFF% metric for the current repository and create a
-`fluff.md` report with reviews of the repo's signal-to-noise ratio.
+Define and calculate the FLUFFP metric for the current repository and create a
+`fluffp.md` report with reviews of the repo's signal-to-noise ratio.
 
 ## Definition of Done
 
-- FLUFF% metric defined and calculated.
-- `fluff.md` created in the repository root.
+- FLUFFP metric defined and calculated.
+- `fluffp.md` created in the repository root.
 - Reviews from Jules, Gemini, and Copilot included.
 
 ## Master Plan
@@ -22,11 +22,13 @@ Define and calculate the FLUFF% metric for the current repository and create a
 
 ## Packet List
 
-- 001 - fluff-audit-jules - Pending - Get fluff review from Jules.
-- 002 - fluff-audit-gemini - Pending - Get fluff review from Gemini.
-- 003 - fluff-audit-copilot - Pending - Get fluff review from Copilot.
-- 004 - consolidate-fluff-report - Pending - Create fluff.md with results.
+- 001 - fluff-audit-jules - Ready - Get fluff review from Jules.
+- 002 - fluff-audit-gemini - Ready - Get fluff review from Gemini.
+- 003 - fluff-audit-copilot - Ready - Get fluff review from Copilot.
+- 004 - consolidate-fluff-report - Ready - Create fluffp.md with results.
 
 ## Log
 
 - 2026-05-31: Task initialized.
+- 2026-05-31: Renamed metric to FLUFFP and report to fluffp.md. Initialized
+  packets for execution.

@@ -21,9 +21,8 @@ establish a consistent style for the auto-deployed site.
 
 ## Packet List
 
-- 001 - dogfood-setup-github-action - Pending - Create the GH Action workflow.
-- 002 - dogfood-setup-site-style - Pending - Define styling for the static site.
+- 001 - setup-github-action - Pending - Create the GH Action workflow.
+- 002 - setup-site-style - Pending - Define styling for the static site.
 
 ## Log
 
-- 2026-05-31: Task initialized.

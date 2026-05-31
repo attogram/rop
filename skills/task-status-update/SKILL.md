@@ -58,7 +58,7 @@ Generate your report using this exact structural template:
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
 - {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
-- {Agents}: Comma-separated list of all agents (PMs and Doers)
+- {Agents}: Comma-separated list of all agents (PMs and Workers)
   who have worked on this task, found in TASK.md Log or packet reports.
 
 ## Status Icons

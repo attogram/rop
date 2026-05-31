@@ -4,7 +4,7 @@ The High ROP (HROP) workflow is the specific implementation of the Restart Often
 ## The Role of AGENTS.md
 The [AGENTS.md](AGENTS.md) file is the primary contract for all agent behavior in this repo.
 It defines the state management, roles, and the available skill registry.
-Adherence to AGENTS.md is mandatory for both PM and Doer roles to
+Adherence to AGENTS.md is mandatory for both PM and Worker roles to
 ensure consistent handoffs and high ROP efficiency.
 
 ## Implementation
@@ -16,9 +16,9 @@ repository within the `active-tasks/{taskName}/` directory:
 - `packets/`: A subdirectory containing zero-padded, sequential work units
   (e.g., `001.discovery.md`). Every packet must include a "Pre-requisites"
   section listing required tools and access.
-- **Reporting**: Every packet report must identify the Doer.
+- **Reporting**: Every packet report must identify the Worker.
 - **Status Updates**: The `STATUS.md` footer must list all agents (PMs
-  and Doers) and users who have worked on the task, derived from history.
+  and Workers) and users who have worked on the task, derived from history.
 
 ## Session Management
 - After every packet is completed and reviewed, the User should ideally restart

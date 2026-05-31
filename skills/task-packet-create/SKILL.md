@@ -13,19 +13,19 @@ can be executed by any entity (AI or Human) with zero prior context.
 
 ## The Self-Containment Standard
 
-A Packet is considered "Faulty" if the Doer must stop and ask for
+A Packet is considered "Faulty" if the Worker must stop and ask for
 information that should have been provided. To prevent faulty packets, 
 every file MUST include:
 
 - Context: The "Why" and "What" of the work.
   - Goal: One clear, actionable sentence.
   - Background: Necessary history or architectural context.
-  - Key Files: Absolute paths to every file the Doer must touch or read.
+  - Key Files: Absolute paths to every file the Worker must touch or read.
   - Resources: Specific URLs, docs, or environment variables.
 - Pre-requisites: List of required tools (bash, jq), access (read/write), and
   capabilities (web search).
 - Plan: The exact, sequential steps (1, 2, 3) to complete the work.
-- Report Requirements: Precise list of artifacts or data the Doer must
+- Report Requirements: Precise list of artifacts or data the Worker must
   capture in their Report.
 
 ## Rules for the PM

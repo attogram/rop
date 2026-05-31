@@ -17,4 +17,4 @@
 - Begin diagnostic reviews and fluff audit.
 - Initialize ROP-007 ROP Assistant.
 
-(via Jules)
+_(Jules)_

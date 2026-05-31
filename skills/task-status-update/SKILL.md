@@ -18,6 +18,9 @@ to ensure easy copy-pasteability.
   regardless of whether it has started or not.
 - High Signal: Omit conversational filler, decorative spacers, and emojis.
 - Report, Don't Direct: Do not give commands to the user.
+- PII Compliance: Do not include real names, email addresses, or other
+  personally identifiable information in reports. Remove the User mention
+  entirely from footers.
 - No Markdown Hyperlinks: Do not hide URLs inside markdown syntax.
   Raw URLs are allowed only if completely necessary and appropriate.
 - Timestamps: Use UTC. You MUST verify the current date and time before
@@ -48,16 +51,15 @@ Generate your report using this exact structural template:
 ## Next Steps
 - {example: Packet 004 is next, pending completion of Packet 003}
 
-(via {Agent Name} with {Username})
+(via {Agents})
 ```
 
 ## Placeholders
 - {ICON}: Status-specific icon (🔴, 🟡, 🟠, 🟢).
-- {Ticket ID}: Use "###" if unknown.
+- {Ticket ID}: The task ID following the `ROP-####` format.
 - {exact name of task directory}: The folder name in `active-tasks/`.
-- {Agent Name}: Your name (e.g., Jules).
-- {Username}: The User's name; if unknown, omit the " with {Username}" part
-  of the footer.
+- {Agents}: Comma-separated list of all agents (PMs and Doers)
+  who have worked on this task, found in TASK.md Log or packet reports.
 
 ## Status Icons
 - 🔴 Blocked: The packet cannot proceed.

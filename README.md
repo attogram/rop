@@ -13,9 +13,8 @@ Our implementation of an Opinionated High ROP Workflow.
 - [HROP.md](HROP.md) - High ROP overview
 - [AGENTS.md](AGENTS.md) - Agents Protocol
 - [skills/](skills) - Agent skills for HROP
-- [active-tasks/](active-tasks) - Active tasks and packets
 
-# 🟠 active-tasks - 2026-05-31 11:40 UTC
+# 🟠 [active-tasks](active-tasks) - 2026-05-31 11:40 UTC
 - 🟠 [ROP-001](active-tasks/ROP-001-welcome-to-rop/TASK.md) - **welcome-to-rop** (In Progress) Initial setup and docs.
 - 🟠 [ROP-002](active-tasks/ROP-002-style-hn/TASK.md) - **style-hn** (In Progress) Communication standards and HN post.
 - 🟡 [ROP-003](active-tasks/ROP-003-diagnostic-reviews/TASK.md) - **diagnostic-reviews** (Pending) ROP/HROP critique collection.

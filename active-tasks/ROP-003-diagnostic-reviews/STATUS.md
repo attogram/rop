@@ -1,16 +1,22 @@
-# 🟡 ROP-003 - ROP-003-diagnostic-reviews - 2026-05-31 11:35 UTC
+# 🟡 ROP-003 - diagnostic-reviews - 2026-05-31 23:00 UTC
 
 ## Goal
-- Create a comprehensive `reviews.md` document containing critical and
+- Create a comprehensive reviews.md document containing critical and
   constructive reviews of ROP/HROP.
 
 ## Packet Status
-- 🟡 001 - **001.review-jules.md** _(Pending)_ Get a critical review from Jules.
-- 🟡 002 - **002.review-gemini.md** _(Pending)_ Get a critical review from Gemini.
-- 🟡 003 - **003.review-copilot.md** _(Pending)_ Get a critical review from Copilot.
-- 🟡 004 - **004.consolidate-reviews.md** _(Pending)_ Create reviews.md with all feedback.
+- 🟢 001 - **review-jules** _(Complete)_ Superseded by 006.
+- 🟢 002 - **review-gemini** _(Complete)_ Superseded by 007.
+- 🟡 003 - **review-copilot** _(Pending)_ Superseded by 008.
+- 🟡 004 - **consolidate-reviews** _(Pending)_ Cancelled.
+- 🟡 005 - **user-feedback-reviews** _(Pending)_ Cancelled.
+- 🟡 006 - **review-jules** _(Pending)_ Self-contained review request.
+- 🟡 007 - **review-gemini** _(Pending)_ Self-contained review request.
+- 🟡 008 - **review-copilot** _(Pending)_ Self-contained review request.
+- 🟡 009 - **consolidate-reviews** _(Pending)_ Update reviews.md.
+- 🟡 010 - **user-feedback-reviews** _(Pending)_ User feedback loop.
 
 ## Next Steps
-- Begin collecting reviews starting with Packet 001.
+- Execute packets 006, 007, and 008 to gather improved reviews.
 
-_(Jules)_
+(PM Jules)

@@ -24,7 +24,7 @@ Every packet file must contain five distinct sections:
 3. Plan: The exact, sequential steps to complete the packet work.
 4. Report Requirements: What validation artifacts or data must be collected.
 5. Report: The captured results and proof of execution appended upon completion.
-   The Doer MUST include their `{Agent Name}` in this section.
+   The Worker MUST include their `{Agent Name}` in this section.
 
 ## 2. Directory State & State Files
 The PM is fully responsible for creating and maintaining the
@@ -47,8 +47,8 @@ active-tasks/{taskName}/
 6. Initialize Packets (PM)
 7. Offer Handoff Choice (PM)
 8. Select Handoff Option (User)
-9. Execute Packet (Doer)
-10. Append Report (Doer)
+9. Execute Packet (Worker)
+10. Append Report (Worker)
 11. Review Results (PM & User)
 12. Gatekeeper Checkpoint (User)
 13. Resolution -> (Approve -> Loop) OR (Modify -> Reset)
@@ -86,8 +86,8 @@ For each packet in the Master Plan, the PM must:
   Master Plan, update the Log (significant events/decisions), and guide the
   packet lifecycle. You MUST enforce NO PII (real names, emails, etc.) across
   all actions and documentation.
-- Doer Role (Packet Doer, the crew, the employee, the mate, the seat,
-  the guy): As the Packet Doer (Doer), you execute a specific,
+- Worker Role (Packet Worker, the crew, the employee, the mate, the seat,
+  the guy): As the Packet Worker (Worker), you execute a specific,
   self-contained unit of work (Packet) autonomously.
 - User (Gatekeeper): The final authority on all decisions, defines the
   Definition of Done, and approves packet results.
@@ -95,7 +95,7 @@ For each packet in the Master Plan, the PM must:
 ## 5. Protocols & Available Skills
 ### System Protocols
 - Agent Roles: Alternate between the PM Role (managing state, logs, and
-  workflow) and the Doer Role (executing an assigned micro-plan).
+  workflow) and the Worker Role (executing an assigned micro-plan).
 - Reference Template: Use [`active-tasks/example-task`](../active-tasks/example-task)
   as the blueprint for formatting markdown structures, logs, and status
   updates. The example directory contains:

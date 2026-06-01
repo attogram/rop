@@ -3,22 +3,47 @@ name: Jules Issue Agent
 on:
   issues:
     types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
 
 jobs:
   run-jules:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: google-labs-code/jules-invoke@main
         with:
           prompt: |
-            The following GitHub issue was created or updated.
-            Read the issue and take appropriate action as orchestrator agent
-            per repos AGENTS.md protocol.
+            The following GitHub event occurred in the repository.
+            Your role: Orchestrator/PM Agent per the AGENTS.md protocol.
 
-            Issue content:
-            ${{ github.event.issue.title }}
-            ${{ github.event.issue.body }}
+            Current Task:
+            1. Analyze the context from the Issue and any new Comment.
+            2. Goal Discovery: If the intent is unclear, use the 'discover-goal' skill. Propose a Goal and Definition of Done (DoD).
+            3. Scaffolding: If a goal is at least "vague", scaffold the task directory in 'active-tasks/' (TASK.md, STATUS.md).
+            4. PM Work: Maintain state, track the Master Plan, create packets, and propose handoffs.
+            5. Execution: Implement changes where possible, create Pull Requests, and post status updates.
+            6. Goal Discovery (Fallback): If no goal is found or you are confused, perform a 'soft scan' of active tasks and comment to clarify.
+
+            STRICT EDITING RULE:
+            When triggered by a comment, you are ONLY permitted to make edits inside ONE new task directory created specifically for this issue (e.g., 'active-tasks/ROP-###-name/'). You MUST NOT edit root files (like README.md, AGENTS.md), files in other directories, or even other existing task directories.
+
+            CRITICAL FORMATTING RULE:
+            All your comments in this GitHub thread MUST follow this exact format:
+            ---
+            (A concise description of what you did or what you propose)
+
+            **Next Steps:**
+            - (Possible next step 1)
+            - (Possible next step 2)
+            ---
+
+            Context:
+            Issue: ${{ github.event.issue.title }}
+            Description: ${{ github.event.issue.body }}
+            ${{ github.event.comment.body && format('New Comment: {0}', github.event.comment.body) || '' }}
           jules_api_key: ${{ secrets.JULES_API_KEY }}

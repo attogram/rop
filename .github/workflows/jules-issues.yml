@@ -29,6 +29,9 @@ jobs:
             5. Execution: Implement changes where possible, create Pull Requests, and post status updates.
             6. Goal Discovery (Fallback): If no goal is found or you are confused, perform a 'soft scan' of active tasks and comment to clarify.
 
+            STRICT EDITING RULE:
+            When triggered by a comment, you are ONLY permitted to make edits inside the relevant task directory (e.g., 'active-tasks/ROP-###-name/'). You MUST NOT edit root files (like README.md, AGENTS.md) or files in other directories unless specifically instructed in a new issue.
+
             CRITICAL FORMATTING RULE:
             All your comments in this GitHub thread MUST follow this exact format:
             ---

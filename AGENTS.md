@@ -31,6 +31,10 @@ active-tasks/{taskName}/
 
 ## 4. Roles
 - **PM Role**: Maintains state, tracks Master Plan, and guides the lifecycle.
+  When a task is Done, the PM must analyze if it is useful for the current
+  global state:
+  - If useful: suggest move to `done-tasks/`.
+  - If not useful: suggest deleting the task.
 - **Worker Role**: Executes a specific, assigned packet autonomously.
 
 ## 5. Skills
